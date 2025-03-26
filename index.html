@@ -25,82 +25,9 @@
   <style>
     @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
   </style>
-</section>
-<style>
-body, .bodyContent {
-background: url(https://i.imgflip.com/6g0n0s.png);
-background-repeat: repeat;
-background-attachment: fixed;
-</style>
-<section> 
-   <head>
-     <meta charset="utf-8" />
-   </head>
- 
-   <body>
-     <div id="app" style="height: 100vh">
-       <!-- Webamp will attempt to center itself within this div -->
-     </div>
-     <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
-     <script>
-       const Webamp = window.Webamp;
-       const webamp = new Webamp({
-         // Optional. An array of objects representing skins.
-         // These will appear in the "Options" menu under "Skins".
-         // Note: These URLs must be served with the correct CORs headers.
-         //
-         // These will appear in the dropdown menu under "Skins".
-         availableSkins: [
-           {
-             url: "https://archive.org/download/winampskin_Invader_Zim_Skin/Invader_Zim_Skin.wsz",
-             name: "Invader Zim Skin",
-           },
-           {
-             url: "https://archive.org/download/winampskins_MLP_Fluttershy_v2/MLP_Fluttershy_v2.wsz",
-             name: "MLP Fluttershy V2",
-           },
-         ],
-        initialTracks: [
-           {
-             metaData: {
-               artist: "Eiffel 65",
-               title: "Blue (Da Ba Dee)",
-             },
-             // NOTE: Your audio file must be served from the same domain as your HTML
-             // file, or served with permissive CORS HTTP headers:
-             // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-             url: "http://www.bludaboi.com/Blue.mp3",
-             duration: 285.322286,
-           },
-           {
-             metaData: {
-               title: "Animal I Have Becoome",
-               artist: "Three Days Grace",
-             },
-             // NOTE: Your audio file must be served from the same domain as your HTML
-             // file, or served with permissive CORS HTTP headers:
-             // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-             url: "http://www.bludaboi.com/Animal.mp3",
-             duration: 231.612245,
-           },
-           {
-             metaData: {
-               title: "Caramelldansen",
-               artist: "Supergott",
-             },
-             // NOTE: Your audio file must be served from the same domain as your HTML
-             // file, or served with permissive CORS HTTP headers:
-             // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-             url: "http://www.blludaboi.com/Caramelldansen.mp3",
-             duration: 175.093061,
-           },
-         ],
-       });
- 
-       
-       // Returns a promise indicating when it's done loading.
-       webamp.renderWhenReady(document.getElementById("app"));
-     </script>
- </section>
+  <h2>
+songs :D
+</h2>
+<audio autoplay controls src="http://bludaboi.com'/Animal.mp3>
 </body>
 </html>
