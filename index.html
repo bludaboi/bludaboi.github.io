@@ -32,6 +32,75 @@ background: url(https://i.imgflip.com/6g0n0s.png);
 background-repeat: repeat;
 background-attachment: fixed;
 </style>
-<audio src="Animal.mp3" controls>
+<section> 
+   <head>
+     <meta charset="utf-8" />
+   </head>
+ 
+   <body>
+     <div id="app" style="height: 100vh">
+       <!-- Webamp will attempt to center itself within this div -->
+     </div>
+     <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+     <script>
+       const Webamp = window.Webamp;
+       const webamp = new Webamp({
+         // Optional. An array of objects representing skins.
+         // These will appear in the "Options" menu under "Skins".
+         // Note: These URLs must be served with the correct CORs headers.
+         //
+         // These will appear in the dropdown menu under "Skins".
+         availableSkins: [
+           {
+             url: "https://archive.org/download/winampskin_Invader_Zim_Skin/Invader_Zim_Skin.wsz",
+             name: "Invader Zim Skin",
+           },
+           {
+             url: "https://archive.org/download/winampskins_MLP_Fluttershy_v2/MLP_Fluttershy_v2.wsz",
+             name: "MLP Fluttershy V2",
+           },
+         ],
+        initialTracks: [
+           {
+             metaData: {
+               artist: "Eiffel 65",
+               title: "Blue (Da Ba Dee)",
+             },
+             // NOTE: Your audio file must be served from the same domain as your HTML
+             // file, or served with permissive CORS HTTP headers:
+             // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+             url: "http://www.bludaboi.com/Blue.mp3",
+             duration: 285.322286,
+           },
+           {
+             metaData: {
+               title: "Animal I Have Becoome",
+               artist: "Three Days Grace",
+             },
+             // NOTE: Your audio file must be served from the same domain as your HTML
+             // file, or served with permissive CORS HTTP headers:
+             // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+             url: "http://www.bludaboi.com/Animal.mp3",
+             duration: 231.612245,
+           },
+           {
+             metaData: {
+               title: "Caramelldansen",
+               artist: "Supergott",
+             },
+             // NOTE: Your audio file must be served from the same domain as your HTML
+             // file, or served with permissive CORS HTTP headers:
+             // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+             url: "http://www.blludaboi.com/Caramelldansen.mp3",
+             duration: 175.093061,
+           },
+         ],
+       });
+ 
+       
+       // Returns a promise indicating when it's done loading.
+       webamp.renderWhenReady(document.getElementById("app"));
+     </script>
+ </section>
 </body>
 </html>
